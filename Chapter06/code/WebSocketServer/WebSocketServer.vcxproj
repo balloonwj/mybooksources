@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1CA1FE98-1553-4B6C-9507-0B13A85B0C68}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WebSocketServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>./</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>./$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="appsrc\BusinessSession.cpp" />
+    <ClCompile Include="appsrc\main.cpp" />
+    <ClCompile Include="base\AsyncLog.cpp" />
+    <ClCompile Include="base\ConfigFileReader.cpp" />
+    <ClCompile Include="base\Platform.cpp" />
+    <ClCompile Include="base\Timestamp.cpp" />
+    <ClCompile Include="net\Acceptor.cpp" />
+    <ClCompile Include="net\Buffer.cpp" />
+    <ClCompile Include="net\Channel.cpp" />
+    <ClCompile Include="net\Connector.cpp" />
+    <ClCompile Include="net\EpollPoller.cpp" />
+    <ClCompile Include="net\EventLoop.cpp" />
+    <ClCompile Include="net\EventLoopThread.cpp" />
+    <ClCompile Include="net\EventLoopThreadPool.cpp" />
+    <ClCompile Include="net\InetAddress.cpp" />
+    <ClCompile Include="net\Poller.cpp" />
+    <ClCompile Include="net\PollPoller.cpp" />
+    <ClCompile Include="net\ProtocolStream.cpp" />
+    <ClCompile Include="net\SelectPoller.cpp" />
+    <ClCompile Include="net\Sockets.cpp" />
+    <ClCompile Include="net\TcpClient.cpp" />
+    <ClCompile Include="net\TcpConnection.cpp" />
+    <ClCompile Include="net\TcpServer.cpp" />
+    <ClCompile Include="net\Timer.cpp" />
+    <ClCompile Include="net\TimerQueue.cpp" />
+    <ClCompile Include="utils\DaemonRun.cpp" />
+    <ClCompile Include="utils\StringUtil.cpp" />
+    <ClCompile Include="websocketsrc\MyWebSocketServer.cpp" />
+    <ClCompile Include="websocketsrc\MyWebSocketSession.cpp" />
+    <ClCompile Include="zlib1.2.11\adler32.c" />
+    <ClCompile Include="zlib1.2.11\compress.c" />
+    <ClCompile Include="zlib1.2.11\crc32.c" />
+    <ClCompile Include="zlib1.2.11\deflate.c" />
+    <ClCompile Include="zlib1.2.11\gzclose.c" />
+    <ClCompile Include="zlib1.2.11\gzlib.c" />
+    <ClCompile Include="zlib1.2.11\gzread.c" />
+    <ClCompile Include="zlib1.2.11\gzwrite.c" />
+    <ClCompile Include="zlib1.2.11\infback.c" />
+    <ClCompile Include="zlib1.2.11\inffast.c" />
+    <ClCompile Include="zlib1.2.11\inflate.c" />
+    <ClCompile Include="zlib1.2.11\inftrees.c" />
+    <ClCompile Include="zlib1.2.11\trees.c" />
+    <ClCompile Include="zlib1.2.11\uncompr.c" />
+    <ClCompile Include="zlib1.2.11\zlibdemo.c" />
+    <ClCompile Include="zlib1.2.11\ZlibUtil.cpp" />
+    <ClCompile Include="zlib1.2.11\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="appsrc\BusinessSession.h" />
+    <ClInclude Include="base\AsyncLog.h" />
+    <ClInclude Include="base\ConfigFileReader.h" />
+    <ClInclude Include="base\Platform.h" />
+    <ClInclude Include="base\RAIIWrapper.h" />
+    <ClInclude Include="base\Singleton.h" />
+    <ClInclude Include="base\Timestamp.h" />
+    <ClInclude Include="net\Acceptor.h" />
+    <ClInclude Include="net\Buffer.h" />
+    <ClInclude Include="net\Callbacks.h" />
+    <ClInclude Include="net\Channel.h" />
+    <ClInclude Include="net\Connector.h" />
+    <ClInclude Include="net\Endian.h" />
+    <ClInclude Include="net\EpollPoller.h" />
+    <ClInclude Include="net\EventLoop.h" />
+    <ClInclude Include="net\EventLoopThread.h" />
+    <ClInclude Include="net\EventLoopThreadPool.h" />
+    <ClInclude Include="net\InetAddress.h" />
+    <ClInclude Include="net\Poller.h" />
+    <ClInclude Include="net\PollPoller.h" />
+    <ClInclude Include="net\ProtocolStream.h" />
+    <ClInclude Include="net\SelectPoller.h" />
+    <ClInclude Include="net\Sockets.h" />
+    <ClInclude Include="net\TcpClient.h" />
+    <ClInclude Include="net\TcpConnection.h" />
+    <ClInclude Include="net\TcpServer.h" />
+    <ClInclude Include="net\Timer.h" />
+    <ClInclude Include="net\TimerId.h" />
+    <ClInclude Include="net\TimerQueue.h" />
+    <ClInclude Include="utils\DaemonRun.h" />
+    <ClInclude Include="utils\StringUtil.h" />
+    <ClInclude Include="websocketsrc\MyWebSocketServer.h" />
+    <ClInclude Include="websocketsrc\MyWebSocketSession.h" />
+    <ClInclude Include="websocketsrc\WebSocketHandshake.h" />
+    <ClInclude Include="zlib1.2.11\crc32.h" />
+    <ClInclude Include="zlib1.2.11\deflate.h" />
+    <ClInclude Include="zlib1.2.11\gzguts.h" />
+    <ClInclude Include="zlib1.2.11\inffast.h" />
+    <ClInclude Include="zlib1.2.11\inffixed.h" />
+    <ClInclude Include="zlib1.2.11\inflate.h" />
+    <ClInclude Include="zlib1.2.11\inftrees.h" />
+    <ClInclude Include="zlib1.2.11\trees.h" />
+    <ClInclude Include="zlib1.2.11\zconf.h" />
+    <ClInclude Include="zlib1.2.11\zlib.h" />
+    <ClInclude Include="zlib1.2.11\ZlibUtil.h" />
+    <ClInclude Include="zlib1.2.11\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="zlib1.2.11\文件概览.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="appsrc">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{6e63e9cf-c248-4b6a-b868-beec0e100de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{018c4d1d-000d-49f1-8a77-3a74777b9829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{8761e956-1a59-483f-983e-2536228d70fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websocketsrc">
+      <UniqueIdentifier>{9bd6f171-2927-4859-84f6-5cabeb9e46f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib1.2.11">
+      <UniqueIdentifier>{50d03c8f-0a49-4aa8-8dea-e2c3dca3259a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="appsrc\BusinessSession.cpp">
+      <Filter>appsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="appsrc\main.cpp">
+      <Filter>appsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="base\AsyncLog.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ConfigFileReader.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Platform.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Timestamp.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Acceptor.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Buffer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Channel.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Connector.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EpollPoller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoop.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoopThread.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoopThreadPool.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\InetAddress.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Poller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\PollPoller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ProtocolStream.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\SelectPoller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Sockets.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpClient.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpConnection.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpServer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Timer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TimerQueue.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DaemonRun.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StringUtil.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="websocketsrc\MyWebSocketServer.cpp">
+      <Filter>websocketsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="websocketsrc\MyWebSocketSession.cpp">
+      <Filter>websocketsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\adler32.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\compress.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\crc32.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\deflate.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\gzclose.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\gzlib.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\gzread.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\gzwrite.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\infback.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\inffast.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\inflate.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\inftrees.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\trees.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\uncompr.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\zlibdemo.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\ZlibUtil.cpp">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib1.2.11\zutil.c">
+      <Filter>zlib1.2.11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="appsrc\BusinessSession.h">
+      <Filter>appsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="base\AsyncLog.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ConfigFileReader.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Platform.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\RAIIWrapper.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Timestamp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Acceptor.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Buffer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Callbacks.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Channel.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Connector.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Endian.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\EpollPoller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\EventLoop.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\EventLoopThread.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\EventLoopThreadPool.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\InetAddress.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Poller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\PollPoller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\ProtocolStream.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\SelectPoller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Sockets.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\TcpClient.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\TcpConnection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\TcpServer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Timer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\TimerId.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\TimerQueue.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DaemonRun.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StringUtil.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="websocketsrc\MyWebSocketServer.h">
+      <Filter>websocketsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="websocketsrc\MyWebSocketSession.h">
+      <Filter>websocketsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="websocketsrc\WebSocketHandshake.h">
+      <Filter>websocketsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\crc32.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\deflate.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\gzguts.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\inffast.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\inffixed.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\inflate.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\inftrees.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\trees.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\zconf.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\zlib.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\ZlibUtil.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib1.2.11\zutil.h">
+      <Filter>zlib1.2.11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="zlib1.2.11\文件概览.txt">
+      <Filter>zlib1.2.11</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
