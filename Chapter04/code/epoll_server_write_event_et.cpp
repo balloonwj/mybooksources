@@ -149,7 +149,7 @@ int main()
                     std::cout << "client fd: " << epoll_events[i].data.fd << " recv data." << std::endl;
                     //普通clientfd
                     char recvbuf[1024] = { 0 };
-                    //每次只收一个字节
+                    //读取数据
                     int m = recv(epoll_events[i].data.fd, recvbuf, 1024, 0);
                     if (m == 0)
                     {
