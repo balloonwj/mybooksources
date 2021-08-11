@@ -44,7 +44,7 @@ currentActiveChannel_(NULL)
     createWakeupfd();
     
 #ifdef WIN32
-    wakeupChannel_.reset(new Channel(this, wakeupFdSend_));
+    wakeupChannel_.reset(new Channel(this, wakeupFdRecv_));
     poller_.reset(new SelectPoller(this));
     
 #else

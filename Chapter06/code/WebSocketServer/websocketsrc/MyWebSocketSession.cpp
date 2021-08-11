@@ -445,7 +445,9 @@ void MyWebSocketSession::makeUpgradeResponse(const char* secWebSocketAccept, std
     response += "Connection: Upgrade\r\n"
                 "Sec-WebSocket-Version: 13\r\n";
     if (m_bClientCompressed)
-        response += "Sec-WebSocket-Extensions: permessage-deflate; client_no_context_takeover\r\nDate: ";
+        response += "Sec-WebSocket-Extensions: permessage-deflate; client_no_context_takeover\r\n";
+
+    response += "Date: ";
 
     char szNow[64];
     time_t now = time(NULL);
