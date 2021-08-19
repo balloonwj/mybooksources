@@ -6,10 +6,9 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
-#include <iostream>
 #include <string.h>
 #include <errno.h>
-#include <string.h>
+#include <iostream>
 
 #define SERVER_ADDRESS "127.0.0.1"
 #define SERVER_PORT     3000
